@@ -1,0 +1,264 @@
+/* NOTE: once one comment is made, everything under that comment */
+/* is related to that comment, until the next comment appears */
+
+
+/* general body styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #cad8de;
+    overflow-x: hidden;
+}
+
+/* making the navbar fixed */
+.parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+/* creating a flex container for the other parts of the body */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: all 1s ease-in-out;
+}
+/* styling the elements and text inside the navbar */
+.navbar {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    justify-content: flex-start;
+    max-height: auto;
+    max-width: auto;
+    z-index: 1;
+}
+
+#homeearly {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    transform: rotate(-45deg);
+}
+
+#hidethecatnip {
+    width: 50px;
+    height: 50px;
+    margin-left: -15px;
+    margin-top: 10px;
+    transform: rotate(-45deg);
+}
+
+#navh1 {
+    align-self: center;
+    text-align: center;
+    color: violet;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+.navbar span {
+    align-self: center;
+    text-align: center;
+    color: violet;
+    font-size: 2rem;
+    margin-left: 60px;
+}
+
+#hamburger {
+    position: absolute;
+    margin-left: 97%;
+    margin-top: 17px;
+    font-size: 2rem;
+}
+
+#arrow {
+    position: absolute;
+    margin-left: 82%;
+    color: violet;
+    align-self: center;
+    font-size: 2rem;
+}
+
+/* styling the footer */
+footer {
+    display: flex;
+    margin-top: auto;
+    flex-shrink: 0;
+    height: 70px;
+    width: 100%;
+    color: violet;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: dodgerblue;
+}
+
+/* styling the sidebar */
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    width: 0;
+    background-color: #cad8de;
+    min-height: 100vh;
+    z-index: 2;
+    transition: all 1s ease-in-out;
+}
+
+.sidebar i {
+    position: absolute;
+    font-size: 2rem;
+    top: 0;
+    left: 0;
+}
+
+/* styling the form and its associated parts */
+form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    transition: all 1.2s ease-in-out;
+    margin-left: -240px;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+
+/* styling the div that gets displayed with the meme */
+.memediv {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+    background-color: #cad8de;
+    /* z-index: 0; */
+}
+
+.memediv img {
+    height: 80%;
+    width: 100%;
+}
+
+.topspan {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 300px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bottomspan {
+    position: absolute;
+    padding-bottom: 10px;
+    left: 0%;
+    bottom: 20%;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.memecontainer {
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: all 1s ease-in-out;
+}
+
+input[type="radio"] {
+    position: absolute;
+    margin-left: 15%;
+}
+
+/* styling for the spans in the sidebar at the top */
+/* also styling for the directions div */
+#directions {
+    position: absolute;
+    text-align: center;
+    background-color: darkslategray;
+    color: violet;
+    padding-top: 10px;
+    width: 50%;
+    height: 5%;
+    border-right: 1px solid black;
+    top: 5%;
+    left: 0;
+    transition: all 1s ease-in-out;
+}
+
+#memeform {
+    position: absolute;
+    text-align: center;
+    background-color: darkslategray;
+    color: violet;
+    padding-top: 10px;
+    width: 50%;
+    height: 5%;
+    border-left: 1px solid black; 
+    top: 5%;
+    right: 0;
+}
+
+#listdirections {
+    display: none;
+}
+
+#listdirections ul {
+    transition: all 1s ease-in-out;
+}
+
+#listdirections h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}

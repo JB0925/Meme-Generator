@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Homemade+Apple&family=Montserrat&display=swap" 
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+          ntegrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assessment_1.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+   <div class="parent">
+        <nav class="navbar">
+            <i class="fas fa-bars" id="hamburger"></i>
+            <h1 id="navh1">Meme Generator</h1>
+            <img src="https://www.rd.com/wp-content/uploads/2020/07/01_Oh-hi-Final-1.jpg?w=1414" 
+                alt="You're Home Early!" id="homeearly">
+            <img src="https://www.rd.com/wp-content/uploads/2020/11/redo-cat-meme7.jpg?w=1414" 
+                alt="Hide the Catnip!" id="hidethecatnip">
+            <span>Click to Make Your Own Funny Memes!</span>
+            <i class="fas fa-angle-double-right" id="arrow"></i>
+        </nav>
+   </div>
+   <div class="container">
+       <div class="sidebar">
+            <i class="fas fa-times"></i>
+            <span id="directions">Directions</span>
+            <span id="memeform">Form</span>
+            <div id="listdirections">
+                <h2>How to Use Meme Generator</h2>
+                <ol>
+                    <li>Enter a valid link for your meme's picture.</li>
+                    <li>Enter the text for the top of your meme.</li>
+                    <li>Enter the text for the bottom of your meme.</li>
+                    <li>Choose your text color. When choosing, consider your picture's background color.</li>
+                </ol>
+            </div>
+            <form action="#" id="form">
+                <label for="picture">Enter Your Image Link</label>
+                <input type="text" id="picture" name="picture" placeholder="Image Link">
+                <label for="toptext">Enter the Top Text</label>
+                <input type="text" id="toptext" name="toptext" min="5" max="15" placeholder="Top Meme Text">
+                <label for="bottomtext">Enter the Bottom Text</label>
+                <input type="text" id="bottomtext" name="bottomtext" min="5" max="15" placeholder="Bottom Meme Text">
+                <label for="color">Pick a Text Color</label>
+                <input type="color" id="color" name="color">
+                <button type="submit">Submit</button>
+            </form>
+       </div>
+       <div class="memecontainer"></div>
+        <footer>
+            &copy; Meme Generator, 2021
+        </footer>
+   </div>
+    <script src="assessment_1.js"></script>
+</body>
+</html>
